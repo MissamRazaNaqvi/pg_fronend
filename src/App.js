@@ -1,12 +1,13 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from './components/home/home';
-import About from './components/about/about';
-import './App.css';
+import Home from "./components/home/home";
+import About from "./components/about/about";
+import "./App.css";
 import Student from "./components/student/student";
 import Contact from "./components/contact/contact";
-import Navbar from './components/navbar/navbar'
+import Navbar from "./components/navbar/navbar";
 import Header from "./components/header/header";
 import Footer from "./components/footer/footer";
+import SearchBar from "./components/search/searchBar";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <div className="container">
         <Header />
         <Router>
+          <SearchBar />
           <Navbar />
           <Routes>
             <Route index element={<Home />} />

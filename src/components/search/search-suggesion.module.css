@@ -1,0 +1,15 @@
+.listContent {
+  list-style: none;
+}
+.list {
+  display: flex;
+  gap: 17px;
+  margin: 10px 0px;
+  padding: 10px 5px;
+  /* border: 1px solid black; */
+  border-radius: 8px;
+  background: #ebebeb;
+}
+.listBody {
+  color: black;
+}
